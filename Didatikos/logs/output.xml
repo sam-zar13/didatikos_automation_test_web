@@ -1,0 +1,417 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 4.1.3 (Python 3.10.7 on win32)" generated="20221215 19:36:25.506" rpa="false" schemaversion="2">
+<suite id="s1" name="Tests" source="C:\Users\thiag\OneDrive\Área de Trabalho\Didatikos\tests">
+<suite id="s1-s1" name="loginTestes" source="C:\Users\thiag\OneDrive\Área de Trabalho\Didatikos\tests\loginTestes.robot">
+<test id="s1-s1-t1" name="Validar login com sucesso aluno">
+<kw name="Iniciar testes" library="baseTestes" type="SETUP">
+<kw name="Set Browser Timeout" library="Browser">
+<var>${old_timeout}</var>
+<arg>30 seconds</arg>
+<tag>Config</tag>
+<tag>Setter</tag>
+<doc>Sets the timeout used by most input and getter keywords.</doc>
+<msg timestamp="20221215 19:36:42.287" level="INFO">${old_timeout} = 10 seconds</msg>
+<status status="PASS" starttime="20221215 19:36:42.129" endtime="20221215 19:36:42.288"/>
+</kw>
+<kw name="Open Browser" library="Browser">
+<arg>http://didatikos-hmg.didatikos.com.br/ava/login</arg>
+<arg>headless=False</arg>
+<tag>BrowserControl</tag>
+<tag>Setter</tag>
+<doc>Opens a new browser instance. Use this keyword for quick experiments or debugging sessions.
+Use `New Page` directly instead of `Open Browser` for production and automated execution.
+See `Browser, Context and Page` for more information about Browser and related concepts.</doc>
+<msg timestamp="20221215 19:36:42.288" level="WARN">Open Browser is for quick experimentation and debugging only. Use New Page for production.</msg>
+<msg timestamp="20221215 19:36:42.289" level="INFO">{"browser": "chromium", "headless": false, "handleSIGINT": true, "handleSIGTERM": true, "handleSIGHUP": true, "timeout": 30000.0, "devtools": false, "slowMo": 0.0, "tracesDir": "C:\\Users\\thiag\\OneDrive\\\u00c1rea de Trabalho\\Didatikos\\logs\\browser\\traces\\7a3d86c8-c8c1-4c29-bbb9-83b702a99c06"}</msg>
+<msg timestamp="20221215 19:36:54.411" level="INFO">Successfully created browser with options: {"browser":"chromium","headless":false,"handleSIGINT":true,"handleSIGTERM":true,"handleSIGHUP":true,"timeout":30000,"devtools":false,"slowMo":0,"tracesDir":"C:\\Users\\thiag\\OneDrive\\Área de Trabalho\\Didatikos\\logs\\browser\\traces\\7a3d86c8-c8c1-4c29-bbb9-83b702a99c06"}</msg>
+<msg timestamp="20221215 19:36:54.411" level="INFO">{"acceptDownloads": true, "ignoreHTTPSErrors": false, "bypassCSP": true, "deviceScaleFactor": 1.0, "isMobile": false, "hasTouch": false, "javaScriptEnabled": true, "offline": false, "hideRfBrowser": false, "reducedMotion": "no-preference", "forcedColors": "none"}</msg>
+<msg timestamp="20221215 19:36:54.545" level="INFO">Successfully created context. </msg>
+<msg timestamp="20221215 19:36:54.545" level="INFO">{'acceptDownloads': True, 'ignoreHTTPSErrors': False, 'bypassCSP': True, 'deviceScaleFactor': 1, 'isMobile': False, 'hasTouch': False, 'javaScriptEnabled': True, 'offline': False, 'hideRfBrowser': False, 'reducedMotion': 'no-preference', 'forcedColors': 'none'}</msg>
+<msg timestamp="20221215 19:37:03.645" level="INFO">Successfully initialized new page object and opened url: http://didatikos-hmg.didatikos.com.br/ava/login</msg>
+<status status="PASS" starttime="20221215 19:36:42.288" endtime="20221215 19:37:03.646"/>
+</kw>
+<kw name="Set Browser Timeout" library="Browser">
+<arg>${old_timeout}</arg>
+<tag>Config</tag>
+<tag>Setter</tag>
+<doc>Sets the timeout used by most input and getter keywords.</doc>
+<msg timestamp="20221215 19:37:03.659" level="INFO">Set timeout to: 10000</msg>
+<status status="PASS" starttime="20221215 19:37:03.646" endtime="20221215 19:37:03.659"/>
+</kw>
+<status status="PASS" starttime="20221215 19:36:42.128" endtime="20221215 19:37:03.659"/>
+</kw>
+<kw name="Preencher login" library="loginPage">
+<arg>alicia@gmail.com</arg>
+<arg>carlos2912</arg>
+<kw name="Get Title" library="Browser">
+<arg>==</arg>
+<arg>Login - Didatikos</arg>
+<tag>Assertion</tag>
+<tag>Getter</tag>
+<tag>PageContent</tag>
+<doc>Returns the title of the current page.</doc>
+<status status="PASS" starttime="20221215 19:37:03.661" endtime="20221215 19:37:03.676"/>
+</kw>
+<kw name="Fill Text" library="Browser">
+<arg>id=email</arg>
+<arg>${VALUE_EMAIL}</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Clears and fills the given ``txt`` into the text field found by ``selector``.</doc>
+<msg timestamp="20221215 19:37:03.676" level="INFO">Fills the text 'alicia@gmail.com' in the given field.</msg>
+<status status="PASS" starttime="20221215 19:37:03.676" endtime="20221215 19:37:03.820"/>
+</kw>
+<kw name="Fill Text" library="Browser">
+<arg>id=password</arg>
+<arg>${VALUE_SENHA}</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Clears and fills the given ``txt`` into the text field found by ``selector``.</doc>
+<msg timestamp="20221215 19:37:03.821" level="INFO">Fills the text 'carlos2912' in the given field.</msg>
+<status status="PASS" starttime="20221215 19:37:03.820" endtime="20221215 19:37:03.856"/>
+</kw>
+<kw name="Click" library="Browser">
+<arg>xpath=//button</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Simulates mouse click on the element found by ``selector``.</doc>
+<status status="PASS" starttime="20221215 19:37:03.856" endtime="20221215 19:37:03.933"/>
+</kw>
+<status status="PASS" starttime="20221215 19:37:03.660" endtime="20221215 19:37:03.933"/>
+</kw>
+<kw name="Verificar login com sucesso perfil aluno" library="loginPage">
+<kw name="Get Element" library="Browser">
+<arg>xpath=//a[text()='Quadro de Aulas']</arg>
+<tag>Getter</tag>
+<tag>PageContent</tag>
+<doc>Returns a reference to a Playwright [https://playwright.dev/docs/api/class-locator|Locator].</doc>
+<msg timestamp="20221215 19:37:07.603" level="INFO">Locator found successfully.</msg>
+<status status="PASS" starttime="20221215 19:37:03.935" endtime="20221215 19:37:07.603"/>
+</kw>
+<kw name="Take Screenshot" library="Browser">
+<tag>PageContent</tag>
+<doc>Takes a screenshot of the current window or element and saves it to disk.</doc>
+<msg timestamp="20221215 19:37:08.090" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="browser/screenshot/robotframework-browser-screenshot-1.png"&gt;&lt;img src="browser/screenshot/robotframework-browser-screenshot-1.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20221215 19:37:07.603" endtime="20221215 19:37:08.091"/>
+</kw>
+<status status="PASS" starttime="20221215 19:37:03.934" endtime="20221215 19:37:08.091"/>
+</kw>
+<status status="PASS" starttime="20221215 19:36:42.125" endtime="20221215 19:37:08.093"/>
+</test>
+<test id="s1-s1-t2" name="Validar login com outro usuário escola">
+<kw name="Iniciar testes" library="baseTestes" type="SETUP">
+<kw name="Set Browser Timeout" library="Browser">
+<var>${old_timeout}</var>
+<arg>30 seconds</arg>
+<tag>Config</tag>
+<tag>Setter</tag>
+<doc>Sets the timeout used by most input and getter keywords.</doc>
+<msg timestamp="20221215 19:37:08.215" level="INFO">No context open.</msg>
+<msg timestamp="20221215 19:37:08.216" level="INFO">${old_timeout} = 10 seconds</msg>
+<status status="PASS" starttime="20221215 19:37:08.212" endtime="20221215 19:37:08.216"/>
+</kw>
+<kw name="Open Browser" library="Browser">
+<arg>http://didatikos-hmg.didatikos.com.br/ava/login</arg>
+<arg>headless=False</arg>
+<tag>BrowserControl</tag>
+<tag>Setter</tag>
+<doc>Opens a new browser instance. Use this keyword for quick experiments or debugging sessions.
+Use `New Page` directly instead of `Open Browser` for production and automated execution.
+See `Browser, Context and Page` for more information about Browser and related concepts.</doc>
+<msg timestamp="20221215 19:37:08.216" level="WARN">Open Browser is for quick experimentation and debugging only. Use New Page for production.</msg>
+<msg timestamp="20221215 19:37:08.218" level="INFO">{"browser": "chromium", "headless": false, "handleSIGINT": true, "handleSIGTERM": true, "handleSIGHUP": true, "timeout": 30000.0, "devtools": false, "slowMo": 0.0, "tracesDir": "C:\\Users\\thiag\\OneDrive\\\u00c1rea de Trabalho\\Didatikos\\logs\\browser\\traces\\d385d776-2912-4c6d-9dfb-be5368abe45c"}</msg>
+<msg timestamp="20221215 19:37:09.380" level="INFO">Successfully created browser with options: {"browser":"chromium","headless":false,"handleSIGINT":true,"handleSIGTERM":true,"handleSIGHUP":true,"timeout":30000,"devtools":false,"slowMo":0,"tracesDir":"C:\\Users\\thiag\\OneDrive\\Área de Trabalho\\Didatikos\\logs\\browser\\traces\\d385d776-2912-4c6d-9dfb-be5368abe45c"}</msg>
+<msg timestamp="20221215 19:37:09.455" level="INFO">{"acceptDownloads": true, "ignoreHTTPSErrors": false, "bypassCSP": true, "deviceScaleFactor": 1.0, "isMobile": false, "hasTouch": false, "javaScriptEnabled": true, "offline": false, "hideRfBrowser": false, "reducedMotion": "no-preference", "forcedColors": "none"}</msg>
+<msg timestamp="20221215 19:37:09.467" level="INFO">Successfully created context. </msg>
+<msg timestamp="20221215 19:37:09.467" level="INFO">{'acceptDownloads': True, 'ignoreHTTPSErrors': False, 'bypassCSP': True, 'deviceScaleFactor': 1, 'isMobile': False, 'hasTouch': False, 'javaScriptEnabled': True, 'offline': False, 'hideRfBrowser': False, 'reducedMotion': 'no-preference', 'forcedColors': 'none'}</msg>
+<msg timestamp="20221215 19:37:15.915" level="INFO">Successfully initialized new page object and opened url: http://didatikos-hmg.didatikos.com.br/ava/login</msg>
+<status status="PASS" starttime="20221215 19:37:08.216" endtime="20221215 19:37:15.916"/>
+</kw>
+<kw name="Set Browser Timeout" library="Browser">
+<arg>${old_timeout}</arg>
+<tag>Config</tag>
+<tag>Setter</tag>
+<doc>Sets the timeout used by most input and getter keywords.</doc>
+<msg timestamp="20221215 19:37:15.923" level="INFO">Set timeout to: 10000</msg>
+<status status="PASS" starttime="20221215 19:37:15.916" endtime="20221215 19:37:15.924"/>
+</kw>
+<status status="PASS" starttime="20221215 19:37:08.212" endtime="20221215 19:37:15.924"/>
+</kw>
+<kw name="Preencher login" library="loginPage">
+<arg>didatikoseduca@gmail.com</arg>
+<arg>carlos2912</arg>
+<kw name="Get Title" library="Browser">
+<arg>==</arg>
+<arg>Login - Didatikos</arg>
+<tag>Assertion</tag>
+<tag>Getter</tag>
+<tag>PageContent</tag>
+<doc>Returns the title of the current page.</doc>
+<status status="PASS" starttime="20221215 19:37:15.926" endtime="20221215 19:37:15.935"/>
+</kw>
+<kw name="Fill Text" library="Browser">
+<arg>id=email</arg>
+<arg>${VALUE_EMAIL}</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Clears and fills the given ``txt`` into the text field found by ``selector``.</doc>
+<msg timestamp="20221215 19:37:15.937" level="INFO">Fills the text 'didatikoseduca@gmail.com' in the given field.</msg>
+<status status="PASS" starttime="20221215 19:37:15.935" endtime="20221215 19:37:15.995"/>
+</kw>
+<kw name="Fill Text" library="Browser">
+<arg>id=password</arg>
+<arg>${VALUE_SENHA}</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Clears and fills the given ``txt`` into the text field found by ``selector``.</doc>
+<msg timestamp="20221215 19:37:15.995" level="INFO">Fills the text 'carlos2912' in the given field.</msg>
+<status status="PASS" starttime="20221215 19:37:15.995" endtime="20221215 19:37:16.023"/>
+</kw>
+<kw name="Click" library="Browser">
+<arg>xpath=//button</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Simulates mouse click on the element found by ``selector``.</doc>
+<status status="PASS" starttime="20221215 19:37:16.023" endtime="20221215 19:37:16.096"/>
+</kw>
+<status status="PASS" starttime="20221215 19:37:15.925" endtime="20221215 19:37:16.096"/>
+</kw>
+<kw name="Verificar login com sucesso perfil escola" library="loginPage">
+<kw name="Get Element" library="Browser">
+<arg>xpath=//title[text()='Página Inicial - Didatikos']</arg>
+<tag>Getter</tag>
+<tag>PageContent</tag>
+<doc>Returns a reference to a Playwright [https://playwright.dev/docs/api/class-locator|Locator].</doc>
+<msg timestamp="20221215 19:37:19.231" level="INFO">Locator found successfully.</msg>
+<status status="PASS" starttime="20221215 19:37:16.106" endtime="20221215 19:37:19.232"/>
+</kw>
+<kw name="Take Screenshot" library="Browser">
+<tag>PageContent</tag>
+<doc>Takes a screenshot of the current window or element and saves it to disk.</doc>
+<msg timestamp="20221215 19:37:19.506" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="browser/screenshot/robotframework-browser-screenshot-2.png"&gt;&lt;img src="browser/screenshot/robotframework-browser-screenshot-2.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20221215 19:37:19.232" endtime="20221215 19:37:19.506"/>
+</kw>
+<status status="PASS" starttime="20221215 19:37:16.105" endtime="20221215 19:37:19.506"/>
+</kw>
+<status status="PASS" starttime="20221215 19:37:08.208" endtime="20221215 19:37:19.506"/>
+</test>
+<test id="s1-s1-t3" name="Validar login inválido">
+<kw name="Iniciar testes" library="baseTestes" type="SETUP">
+<kw name="Set Browser Timeout" library="Browser">
+<var>${old_timeout}</var>
+<arg>30 seconds</arg>
+<tag>Config</tag>
+<tag>Setter</tag>
+<doc>Sets the timeout used by most input and getter keywords.</doc>
+<msg timestamp="20221215 19:37:19.644" level="INFO">No context open.</msg>
+<msg timestamp="20221215 19:37:19.644" level="INFO">${old_timeout} = 10 seconds</msg>
+<status status="PASS" starttime="20221215 19:37:19.635" endtime="20221215 19:37:19.645"/>
+</kw>
+<kw name="Open Browser" library="Browser">
+<arg>http://didatikos-hmg.didatikos.com.br/ava/login</arg>
+<arg>headless=False</arg>
+<tag>BrowserControl</tag>
+<tag>Setter</tag>
+<doc>Opens a new browser instance. Use this keyword for quick experiments or debugging sessions.
+Use `New Page` directly instead of `Open Browser` for production and automated execution.
+See `Browser, Context and Page` for more information about Browser and related concepts.</doc>
+<msg timestamp="20221215 19:37:19.646" level="WARN">Open Browser is for quick experimentation and debugging only. Use New Page for production.</msg>
+<msg timestamp="20221215 19:37:19.656" level="INFO">{"browser": "chromium", "headless": false, "handleSIGINT": true, "handleSIGTERM": true, "handleSIGHUP": true, "timeout": 30000.0, "devtools": false, "slowMo": 0.0, "tracesDir": "C:\\Users\\thiag\\OneDrive\\\u00c1rea de Trabalho\\Didatikos\\logs\\browser\\traces\\bae0ed85-84b9-4636-8e9e-a05a1259693d"}</msg>
+<msg timestamp="20221215 19:37:20.776" level="INFO">Successfully created browser with options: {"browser":"chromium","headless":false,"handleSIGINT":true,"handleSIGTERM":true,"handleSIGHUP":true,"timeout":30000,"devtools":false,"slowMo":0,"tracesDir":"C:\\Users\\thiag\\OneDrive\\Área de Trabalho\\Didatikos\\logs\\browser\\traces\\bae0ed85-84b9-4636-8e9e-a05a1259693d"}</msg>
+<msg timestamp="20221215 19:37:20.778" level="INFO">{"acceptDownloads": true, "ignoreHTTPSErrors": false, "bypassCSP": true, "deviceScaleFactor": 1.0, "isMobile": false, "hasTouch": false, "javaScriptEnabled": true, "offline": false, "hideRfBrowser": false, "reducedMotion": "no-preference", "forcedColors": "none"}</msg>
+<msg timestamp="20221215 19:37:20.783" level="INFO">Successfully created context. </msg>
+<msg timestamp="20221215 19:37:20.783" level="INFO">{'acceptDownloads': True, 'ignoreHTTPSErrors': False, 'bypassCSP': True, 'deviceScaleFactor': 1, 'isMobile': False, 'hasTouch': False, 'javaScriptEnabled': True, 'offline': False, 'hideRfBrowser': False, 'reducedMotion': 'no-preference', 'forcedColors': 'none'}</msg>
+<msg timestamp="20221215 19:37:28.591" level="INFO">Successfully initialized new page object and opened url: http://didatikos-hmg.didatikos.com.br/ava/login</msg>
+<status status="PASS" starttime="20221215 19:37:19.645" endtime="20221215 19:37:28.592"/>
+</kw>
+<kw name="Set Browser Timeout" library="Browser">
+<arg>${old_timeout}</arg>
+<tag>Config</tag>
+<tag>Setter</tag>
+<doc>Sets the timeout used by most input and getter keywords.</doc>
+<msg timestamp="20221215 19:37:28.595" level="INFO">Set timeout to: 10000</msg>
+<status status="PASS" starttime="20221215 19:37:28.592" endtime="20221215 19:37:28.595"/>
+</kw>
+<status status="PASS" starttime="20221215 19:37:19.633" endtime="20221215 19:37:28.595"/>
+</kw>
+<kw name="Preencher login" library="loginPage">
+<arg>alicia@gmail.com</arg>
+<arg>123</arg>
+<kw name="Get Title" library="Browser">
+<arg>==</arg>
+<arg>Login - Didatikos</arg>
+<tag>Assertion</tag>
+<tag>Getter</tag>
+<tag>PageContent</tag>
+<doc>Returns the title of the current page.</doc>
+<status status="PASS" starttime="20221215 19:37:28.611" endtime="20221215 19:37:28.622"/>
+</kw>
+<kw name="Fill Text" library="Browser">
+<arg>id=email</arg>
+<arg>${VALUE_EMAIL}</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Clears and fills the given ``txt`` into the text field found by ``selector``.</doc>
+<msg timestamp="20221215 19:37:28.623" level="INFO">Fills the text 'alicia@gmail.com' in the given field.</msg>
+<status status="PASS" starttime="20221215 19:37:28.622" endtime="20221215 19:37:28.679"/>
+</kw>
+<kw name="Fill Text" library="Browser">
+<arg>id=password</arg>
+<arg>${VALUE_SENHA}</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Clears and fills the given ``txt`` into the text field found by ``selector``.</doc>
+<msg timestamp="20221215 19:37:28.679" level="INFO">Fills the text '123' in the given field.</msg>
+<status status="PASS" starttime="20221215 19:37:28.679" endtime="20221215 19:37:28.707"/>
+</kw>
+<kw name="Click" library="Browser">
+<arg>xpath=//button</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Simulates mouse click on the element found by ``selector``.</doc>
+<status status="PASS" starttime="20221215 19:37:28.707" endtime="20221215 19:37:28.811"/>
+</kw>
+<status status="PASS" starttime="20221215 19:37:28.610" endtime="20221215 19:37:28.811"/>
+</kw>
+<kw name="Verificar login inválido" library="loginPage">
+<kw name="Get Text" library="Browser">
+<arg>xpath=//*[text()='Credenciais inválidas!']</arg>
+<arg>==</arg>
+<arg>Credenciais inválidas!</arg>
+<tag>Assertion</tag>
+<tag>Getter</tag>
+<tag>PageContent</tag>
+<doc>Returns text attribute of the element found by ``selector``.</doc>
+<status status="PASS" starttime="20221215 19:37:28.812" endtime="20221215 19:37:30.243"/>
+</kw>
+<status status="PASS" starttime="20221215 19:37:28.812" endtime="20221215 19:37:30.243"/>
+</kw>
+<status status="PASS" starttime="20221215 19:37:19.628" endtime="20221215 19:37:30.244"/>
+</test>
+<test id="s1-s1-t4" name="Validar login vazio">
+<kw name="Iniciar testes" library="baseTestes" type="SETUP">
+<kw name="Set Browser Timeout" library="Browser">
+<var>${old_timeout}</var>
+<arg>30 seconds</arg>
+<tag>Config</tag>
+<tag>Setter</tag>
+<doc>Sets the timeout used by most input and getter keywords.</doc>
+<msg timestamp="20221215 19:37:30.444" level="INFO">No context open.</msg>
+<msg timestamp="20221215 19:37:30.445" level="INFO">${old_timeout} = 10 seconds</msg>
+<status status="PASS" starttime="20221215 19:37:30.441" endtime="20221215 19:37:30.445"/>
+</kw>
+<kw name="Open Browser" library="Browser">
+<arg>http://didatikos-hmg.didatikos.com.br/ava/login</arg>
+<arg>headless=False</arg>
+<tag>BrowserControl</tag>
+<tag>Setter</tag>
+<doc>Opens a new browser instance. Use this keyword for quick experiments or debugging sessions.
+Use `New Page` directly instead of `Open Browser` for production and automated execution.
+See `Browser, Context and Page` for more information about Browser and related concepts.</doc>
+<msg timestamp="20221215 19:37:30.445" level="WARN">Open Browser is for quick experimentation and debugging only. Use New Page for production.</msg>
+<msg timestamp="20221215 19:37:30.449" level="INFO">{"browser": "chromium", "headless": false, "handleSIGINT": true, "handleSIGTERM": true, "handleSIGHUP": true, "timeout": 30000.0, "devtools": false, "slowMo": 0.0, "tracesDir": "C:\\Users\\thiag\\OneDrive\\\u00c1rea de Trabalho\\Didatikos\\logs\\browser\\traces\\8d13fef2-5eb3-47eb-8c04-5d61b6761e52"}</msg>
+<msg timestamp="20221215 19:37:31.560" level="INFO">Successfully created browser with options: {"browser":"chromium","headless":false,"handleSIGINT":true,"handleSIGTERM":true,"handleSIGHUP":true,"timeout":30000,"devtools":false,"slowMo":0,"tracesDir":"C:\\Users\\thiag\\OneDrive\\Área de Trabalho\\Didatikos\\logs\\browser\\traces\\8d13fef2-5eb3-47eb-8c04-5d61b6761e52"}</msg>
+<msg timestamp="20221215 19:37:31.561" level="INFO">{"acceptDownloads": true, "ignoreHTTPSErrors": false, "bypassCSP": true, "deviceScaleFactor": 1.0, "isMobile": false, "hasTouch": false, "javaScriptEnabled": true, "offline": false, "hideRfBrowser": false, "reducedMotion": "no-preference", "forcedColors": "none"}</msg>
+<msg timestamp="20221215 19:37:31.582" level="INFO">Successfully created context. </msg>
+<msg timestamp="20221215 19:37:31.582" level="INFO">{'acceptDownloads': True, 'ignoreHTTPSErrors': False, 'bypassCSP': True, 'deviceScaleFactor': 1, 'isMobile': False, 'hasTouch': False, 'javaScriptEnabled': True, 'offline': False, 'hideRfBrowser': False, 'reducedMotion': 'no-preference', 'forcedColors': 'none'}</msg>
+<msg timestamp="20221215 19:37:37.319" level="INFO">Successfully initialized new page object and opened url: http://didatikos-hmg.didatikos.com.br/ava/login</msg>
+<status status="PASS" starttime="20221215 19:37:30.445" endtime="20221215 19:37:37.320"/>
+</kw>
+<kw name="Set Browser Timeout" library="Browser">
+<arg>${old_timeout}</arg>
+<tag>Config</tag>
+<tag>Setter</tag>
+<doc>Sets the timeout used by most input and getter keywords.</doc>
+<msg timestamp="20221215 19:37:37.327" level="INFO">Set timeout to: 10000</msg>
+<status status="PASS" starttime="20221215 19:37:37.320" endtime="20221215 19:37:37.327"/>
+</kw>
+<status status="PASS" starttime="20221215 19:37:30.441" endtime="20221215 19:37:37.328"/>
+</kw>
+<kw name="Preencher login" library="loginPage">
+<arg>${VALUE_VAZIO}</arg>
+<arg>${VALUE_VAZIO}</arg>
+<kw name="Get Title" library="Browser">
+<arg>==</arg>
+<arg>Login - Didatikos</arg>
+<tag>Assertion</tag>
+<tag>Getter</tag>
+<tag>PageContent</tag>
+<doc>Returns the title of the current page.</doc>
+<status status="PASS" starttime="20221215 19:37:37.329" endtime="20221215 19:37:37.334"/>
+</kw>
+<kw name="Fill Text" library="Browser">
+<arg>id=email</arg>
+<arg>${VALUE_EMAIL}</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Clears and fills the given ``txt`` into the text field found by ``selector``.</doc>
+<msg timestamp="20221215 19:37:37.336" level="INFO">Fills the text '' in the given field.</msg>
+<status status="PASS" starttime="20221215 19:37:37.335" endtime="20221215 19:37:37.383"/>
+</kw>
+<kw name="Fill Text" library="Browser">
+<arg>id=password</arg>
+<arg>${VALUE_SENHA}</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Clears and fills the given ``txt`` into the text field found by ``selector``.</doc>
+<msg timestamp="20221215 19:37:37.385" level="INFO">Fills the text '' in the given field.</msg>
+<status status="PASS" starttime="20221215 19:37:37.384" endtime="20221215 19:37:37.408"/>
+</kw>
+<kw name="Click" library="Browser">
+<arg>xpath=//button</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Simulates mouse click on the element found by ``selector``.</doc>
+<status status="PASS" starttime="20221215 19:37:37.408" endtime="20221215 19:37:37.567"/>
+</kw>
+<status status="PASS" starttime="20221215 19:37:37.328" endtime="20221215 19:37:37.568"/>
+</kw>
+<kw name="Verificar login vazio" library="loginPage">
+<kw name="Get Text" library="Browser">
+<arg>xpath=//*[text()='O campo senha é obrigatório.']</arg>
+<arg>==</arg>
+<arg>O campo senha é obrigatório.</arg>
+<tag>Assertion</tag>
+<tag>Getter</tag>
+<tag>PageContent</tag>
+<doc>Returns text attribute of the element found by ``selector``.</doc>
+<status status="PASS" starttime="20221215 19:37:37.569" endtime="20221215 19:37:39.427"/>
+</kw>
+<kw name="Get Text" library="Browser">
+<arg>xpath=//*[text()='O campo e-mail é obrigatório.']</arg>
+<arg>==</arg>
+<arg>O campo e-mail é obrigatório.</arg>
+<tag>Assertion</tag>
+<tag>Getter</tag>
+<tag>PageContent</tag>
+<doc>Returns text attribute of the element found by ``selector``.</doc>
+<status status="PASS" starttime="20221215 19:37:39.427" endtime="20221215 19:37:39.890"/>
+</kw>
+<status status="PASS" starttime="20221215 19:37:37.569" endtime="20221215 19:37:39.890"/>
+</kw>
+<tag>vazio</tag>
+<status status="PASS" starttime="20221215 19:37:30.437" endtime="20221215 19:37:39.892"/>
+</test>
+<status status="PASS" starttime="20221215 19:36:25.534" endtime="20221215 19:37:40.023"/>
+</suite>
+<status status="PASS" starttime="20221215 19:36:25.510" endtime="20221215 19:37:40.030"/>
+</suite>
+<statistics>
+<total>
+<stat pass="4" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+<stat pass="1" fail="0" skip="0">vazio</stat>
+</tag>
+<suite>
+<stat pass="4" fail="0" skip="0" id="s1" name="Tests">Tests</stat>
+<stat pass="4" fail="0" skip="0" id="s1-s1" name="loginTestes">Tests.loginTestes</stat>
+</suite>
+</statistics>
+<errors>
+<msg timestamp="20221215 19:36:42.288" level="WARN">Open Browser is for quick experimentation and debugging only. Use New Page for production.</msg>
+<msg timestamp="20221215 19:37:08.216" level="WARN">Open Browser is for quick experimentation and debugging only. Use New Page for production.</msg>
+<msg timestamp="20221215 19:37:19.646" level="WARN">Open Browser is for quick experimentation and debugging only. Use New Page for production.</msg>
+<msg timestamp="20221215 19:37:30.445" level="WARN">Open Browser is for quick experimentation and debugging only. Use New Page for production.</msg>
+</errors>
+</robot>
