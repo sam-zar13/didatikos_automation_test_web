@@ -21,6 +21,7 @@ Validar Quadro de Aulas
 Validar Ambiente de Treinamento
     Login com perfil Escola
     Acessar Ambiente de Treinamento
+    Verificar acesso da página Ambiente de Treinamento
 
 Validar Avaliações / Simulados
     Login com perfil Escola
@@ -29,3 +30,4 @@ Validar Avaliações / Simulados
 Validar Eventos
     Login com perfil Escola
     Acessar Eventos
+
