@@ -1,0 +1,227 @@
+{"level":30,"time":"2022-12-16T23:21:29.464Z","pid":7592,"hostname":"leandro","msg":"Listening on 52987"}
+{"level":30,"time":"2022-12-16T23:21:29.782Z","pid":7592,"hostname":"leandro","msg":"Start of node method getBrowserCatalog"}
+{"level":30,"time":"2022-12-16T23:21:29.783Z","pid":7592,"hostname":"leandro","msg":"End of node method getBrowserCatalog"}
+{"level":30,"time":"2022-12-16T23:21:29.786Z","pid":7592,"hostname":"leandro","msg":"Start of node method getBrowserCatalog"}
+{"level":30,"time":"2022-12-16T23:21:29.786Z","pid":7592,"hostname":"leandro","msg":"End of node method getBrowserCatalog"}
+================= Original suppressed error =================
+Error: Browser has been closed.
+    at PlaywrightState.getActiveBrowser (C:\Users\leand\Lib\site-packages\Browser\wrapper\index.js:7958:15)
+    at PlaywrightServer.getActiveBrowser (C:\Users\leand\Lib\site-packages\Browser\wrapper\index.js:8469:59)
+    at PlaywrightServer.setTimeout (C:\Users\leand\Lib\site-packages\Browser\wrapper\index.js:8711:69)
+    at C:\Users\leand\Lib\site-packages\Browser\wrapper\node_modules\@grpc\grpc-js\build\src\server.js:743:17
+    at Http2ServerCallStream.safeDeserializeMessage (C:\Users\leand\Lib\site-packages\Browser\wrapper\node_modules\@grpc\grpc-js\build\src\server-call.js:389:13)
+    at ServerHttp2Stream.onEnd (C:\Users\leand\Lib\site-packages\Browser\wrapper\node_modules\@grpc\grpc-js\build\src\server-call.js:376:22)
+    at ServerHttp2Stream.emit (node:events:525:35)
+    at endReadableNT (node:internal/streams/readable:1359:12)
+    at process.processTicksAndRejections (node:internal/process/task_queues:82:21)
+=============================================================
+{"level":30,"time":"2022-12-16T23:21:29.798Z","pid":7592,"hostname":"leandro","msg":"Start of node method newBrowser"}
+{"level":30,"time":"2022-12-16T23:21:31.209Z","pid":7592,"hostname":"leandro","msg":"End of node method newBrowser"}
+{"level":30,"time":"2022-12-16T23:21:31.213Z","pid":7592,"hostname":"leandro","msg":"currentBrowser: [object Object]"}
+{"level":30,"time":"2022-12-16T23:21:31.213Z","pid":7592,"hostname":"leandro","msg":"Start of node method newContext"}
+{"level":30,"time":"2022-12-16T23:21:31.226Z","pid":7592,"hostname":"leandro","msg":"End of node method newContext"}
+{"level":30,"time":"2022-12-16T23:21:31.228Z","pid":7592,"hostname":"leandro","msg":"Start of node method newPage"}
+{"level":30,"time":"2022-12-16T23:21:31.213Z","pid":7592,"hostname":"leandro","msg":"Trace file: "}
+{"level":30,"time":"2022-12-16T23:21:31.225Z","pid":7592,"hostname":"leandro","msg":"Changed active context"}
+{"level":30,"time":"2022-12-16T23:21:31.229Z","pid":7592,"hostname":"leandro","msg":"currentBrowser: [object Object]"}
+{"level":30,"time":"2022-12-16T23:21:31.401Z","pid":7592,"hostname":"leandro","msg":"Video path: undefined"}
+{"level":30,"time":"2022-12-16T23:21:31.401Z","pid":7592,"hostname":"leandro","msg":"Changed active page"}
+{"level":30,"time":"2022-12-16T23:21:34.818Z","pid":7592,"hostname":"leandro","msg":"End of node method newPage"}
+{"level":30,"time":"2022-12-16T23:21:34.835Z","pid":7592,"hostname":"leandro","msg":"Start of node method fillText"}
+{"level":30,"time":"2022-12-16T23:21:34.836Z","pid":7592,"hostname":"leandro","msg":"Strict mode is enabled, find Locator with id=email in page."}
+{"level":30,"time":"2022-12-16T23:21:34.878Z","pid":7592,"hostname":"leandro","msg":"End of node method fillText"}
+{"level":30,"time":"2022-12-16T23:21:34.880Z","pid":7592,"hostname":"leandro","msg":"Start of node method fillText"}
+{"level":30,"time":"2022-12-16T23:21:34.880Z","pid":7592,"hostname":"leandro","msg":"Strict mode is enabled, find Locator with id=password in page."}
+{"level":30,"time":"2022-12-16T23:21:34.897Z","pid":7592,"hostname":"leandro","msg":"End of node method fillText"}
+{"level":30,"time":"2022-12-16T23:21:34.899Z","pid":7592,"hostname":"leandro","msg":"Start of node method click"}
+{"level":30,"time":"2022-12-16T23:21:34.899Z","pid":7592,"hostname":"leandro","msg":"Strict mode is enabled, find Locator with xpath=//button in page."}
+{"level":30,"time":"2022-12-16T23:21:34.989Z","pid":7592,"hostname":"leandro","msg":"End of node method click"}
+{"level":30,"time":"2022-12-16T23:21:34.994Z","pid":7592,"hostname":"leandro","msg":"Start of node method getElement"}
+{"level":30,"time":"2022-12-16T23:21:34.994Z","pid":7592,"hostname":"leandro","msg":"Strict mode is enabled, find Locator with xpath=//title[text()='Página Inicial - Didatikos'] in page."}
+{"level":30,"time":"2022-12-16T23:21:37.533Z","pid":7592,"hostname":"leandro","msg":"End of node method getElement"}
+{"level":30,"time":"2022-12-16T23:21:37.536Z","pid":7592,"hostname":"leandro","msg":"Start of node method takeScreenshot"}
+{"level":30,"time":"2022-12-16T23:21:38.016Z","pid":7592,"hostname":"leandro","msg":"End of node method takeScreenshot"}
+{"level":30,"time":"2022-12-16T23:21:38.020Z","pid":7592,"hostname":"leandro","msg":"Start of node method click"}
+{"level":30,"time":"2022-12-16T23:21:38.020Z","pid":7592,"hostname":"leandro","msg":"Strict mode is enabled, find Locator with xpath=//*[@class='f-16 text-bold px-15px'][text()='Quadro de Aulas'] in page."}
+{"level":30,"time":"2022-12-16T23:21:38.735Z","pid":7592,"hostname":"leandro","msg":"End of node method click"}
+{"level":30,"time":"2022-12-16T23:21:38.738Z","pid":7592,"hostname":"leandro","msg":"Start of node method getBrowserCatalog"}
+{"level":30,"time":"2022-12-16T23:21:38.752Z","pid":7592,"hostname":"leandro","msg":"End of node method getBrowserCatalog"}
+{"level":30,"time":"2022-12-16T23:21:38.753Z","pid":7592,"hostname":"leandro","msg":"Start of node method getBrowserCatalog"}
+{"level":30,"time":"2022-12-16T23:21:38.755Z","pid":7592,"hostname":"leandro","msg":"End of node method getBrowserCatalog"}
+{"level":30,"time":"2022-12-16T23:21:38.758Z","pid":7592,"hostname":"leandro","msg":"Changed active context"}
+{"level":30,"time":"2022-12-16T23:21:38.758Z","pid":7592,"hostname":"leandro","msg":"Changing current active page"}
+{"level":30,"time":"2022-12-16T23:21:38.758Z","pid":7592,"hostname":"leandro","msg":"Changed active page"}
+{"level":30,"time":"2022-12-16T23:21:38.763Z","pid":7592,"hostname":"leandro","msg":"Start of node method getBrowserCatalog"}
+{"level":30,"time":"2022-12-16T23:21:38.765Z","pid":7592,"hostname":"leandro","msg":"End of node method getBrowserCatalog"}
+{"level":30,"time":"2022-12-16T23:21:38.766Z","pid":7592,"hostname":"leandro","msg":"Start of node method switchBrowser"}
+{"level":30,"time":"2022-12-16T23:21:38.767Z","pid":7592,"hostname":"leandro","msg":"End of node method switchBrowser"}
+{"level":30,"time":"2022-12-16T23:21:38.768Z","pid":7592,"hostname":"leandro","msg":"Start of node method switchBrowser"}
+{"level":30,"time":"2022-12-16T23:21:38.768Z","pid":7592,"hostname":"leandro","msg":"End of node method switchBrowser"}
+{"level":30,"time":"2022-12-16T23:21:38.771Z","pid":7592,"hostname":"leandro","msg":"Start of node method getBrowserCatalog"}
+{"level":30,"time":"2022-12-16T23:21:38.774Z","pid":7592,"hostname":"leandro","msg":"End of node method getBrowserCatalog"}
+{"level":30,"time":"2022-12-16T23:21:38.775Z","pid":7592,"hostname":"leandro","msg":"Changed active context"}
+{"level":30,"time":"2022-12-16T23:21:38.775Z","pid":7592,"hostname":"leandro","msg":"Changing current active page"}
+{"level":30,"time":"2022-12-16T23:21:38.775Z","pid":7592,"hostname":"leandro","msg":"Changed active page"}
+{"level":30,"time":"2022-12-16T23:21:38.778Z","pid":7592,"hostname":"leandro","msg":"Start of node method closeContext"}
+{"level":30,"time":"2022-12-16T23:21:38.794Z","pid":7592,"hostname":"leandro","msg":"Removed page=e77a0215-87af-4119-967b-fc3322a0080c from context=2b742db3-f9a9-444f-9b18-e3ac0cfac9d5 page stack"}
+{"level":30,"time":"2022-12-16T23:21:38.821Z","pid":7592,"hostname":"leandro","msg":"End of node method closeContext"}
+{"level":30,"time":"2022-12-16T23:21:38.847Z","pid":7592,"hostname":"leandro","msg":"Start of node method getBrowserCatalog"}
+{"level":30,"time":"2022-12-16T23:21:38.847Z","pid":7592,"hostname":"leandro","msg":"End of node method getBrowserCatalog"}
+{"level":30,"time":"2022-12-16T23:21:38.858Z","pid":7592,"hostname":"leandro","msg":"Start of node method newBrowser"}
+{"level":30,"time":"2022-12-16T23:21:40.172Z","pid":7592,"hostname":"leandro","msg":"End of node method newBrowser"}
+{"level":30,"time":"2022-12-16T23:21:40.177Z","pid":7592,"hostname":"leandro","msg":"currentBrowser: [object Object]"}
+{"level":30,"time":"2022-12-16T23:21:40.177Z","pid":7592,"hostname":"leandro","msg":"Trace file: "}
+{"level":30,"time":"2022-12-16T23:21:40.190Z","pid":7592,"hostname":"leandro","msg":"Changed active context"}
+{"level":30,"time":"2022-12-16T23:21:40.193Z","pid":7592,"hostname":"leandro","msg":"currentBrowser: [object Object]"}
+{"level":30,"time":"2022-12-16T23:21:40.177Z","pid":7592,"hostname":"leandro","msg":"Start of node method newContext"}
+{"level":30,"time":"2022-12-16T23:21:40.190Z","pid":7592,"hostname":"leandro","msg":"End of node method newContext"}
+{"level":30,"time":"2022-12-16T23:21:40.193Z","pid":7592,"hostname":"leandro","msg":"Start of node method newPage"}
+{"level":30,"time":"2022-12-16T23:21:40.639Z","pid":7592,"hostname":"leandro","msg":"Video path: undefined"}
+{"level":30,"time":"2022-12-16T23:21:40.639Z","pid":7592,"hostname":"leandro","msg":"Changed active page"}
+{"level":30,"time":"2022-12-16T23:21:43.833Z","pid":7592,"hostname":"leandro","msg":"End of node method newPage"}
+{"level":30,"time":"2022-12-16T23:21:43.849Z","pid":7592,"hostname":"leandro","msg":"Start of node method fillText"}
+{"level":30,"time":"2022-12-16T23:21:43.849Z","pid":7592,"hostname":"leandro","msg":"Strict mode is enabled, find Locator with id=email in page."}
+{"level":30,"time":"2022-12-16T23:21:43.886Z","pid":7592,"hostname":"leandro","msg":"End of node method fillText"}
+{"level":30,"time":"2022-12-16T23:21:43.888Z","pid":7592,"hostname":"leandro","msg":"Start of node method fillText"}
+{"level":30,"time":"2022-12-16T23:21:43.888Z","pid":7592,"hostname":"leandro","msg":"Strict mode is enabled, find Locator with id=password in page."}
+{"level":30,"time":"2022-12-16T23:21:43.906Z","pid":7592,"hostname":"leandro","msg":"End of node method fillText"}
+{"level":30,"time":"2022-12-16T23:21:43.909Z","pid":7592,"hostname":"leandro","msg":"Strict mode is enabled, find Locator with xpath=//button in page."}
+{"level":30,"time":"2022-12-16T23:21:43.909Z","pid":7592,"hostname":"leandro","msg":"Start of node method click"}
+{"level":30,"time":"2022-12-16T23:21:44.011Z","pid":7592,"hostname":"leandro","msg":"End of node method click"}
+{"level":30,"time":"2022-12-16T23:21:44.015Z","pid":7592,"hostname":"leandro","msg":"Start of node method getElement"}
+{"level":30,"time":"2022-12-16T23:21:44.015Z","pid":7592,"hostname":"leandro","msg":"Strict mode is enabled, find Locator with xpath=//title[text()='Página Inicial - Didatikos'] in page."}
+{"level":30,"time":"2022-12-16T23:21:46.913Z","pid":7592,"hostname":"leandro","msg":"End of node method getElement"}
+{"level":30,"time":"2022-12-16T23:21:46.916Z","pid":7592,"hostname":"leandro","msg":"Start of node method takeScreenshot"}
+{"level":30,"time":"2022-12-16T23:21:47.169Z","pid":7592,"hostname":"leandro","msg":"End of node method takeScreenshot"}
+{"level":30,"time":"2022-12-16T23:21:47.173Z","pid":7592,"hostname":"leandro","msg":"Start of node method click"}
+{"level":30,"time":"2022-12-16T23:21:47.173Z","pid":7592,"hostname":"leandro","msg":"Strict mode is enabled, find Locator with xpath=//*[@class='f-16 text-bold px-15px'][text()='Ambiente de Treinamento'] in page."}
+{"level":30,"time":"2022-12-16T23:21:47.781Z","pid":7592,"hostname":"leandro","msg":"End of node method click"}
+{"level":30,"time":"2022-12-16T23:21:52.784Z","pid":7592,"hostname":"leandro","msg":"Start of node method getBrowserCatalog"}
+{"level":30,"time":"2022-12-16T23:21:52.792Z","pid":7592,"hostname":"leandro","msg":"Changed active context"}
+{"level":30,"time":"2022-12-16T23:21:52.787Z","pid":7592,"hostname":"leandro","msg":"End of node method getBrowserCatalog"}
+{"level":30,"time":"2022-12-16T23:21:52.789Z","pid":7592,"hostname":"leandro","msg":"Start of node method getBrowserCatalog"}
+{"level":30,"time":"2022-12-16T23:21:52.790Z","pid":7592,"hostname":"leandro","msg":"End of node method getBrowserCatalog"}
+{"level":30,"time":"2022-12-16T23:21:52.796Z","pid":7592,"hostname":"leandro","msg":"Start of node method getBrowserCatalog"}
+{"level":30,"time":"2022-12-16T23:21:52.798Z","pid":7592,"hostname":"leandro","msg":"End of node method getBrowserCatalog"}
+{"level":30,"time":"2022-12-16T23:21:52.800Z","pid":7592,"hostname":"leandro","msg":"Start of node method switchBrowser"}
+{"level":30,"time":"2022-12-16T23:21:52.800Z","pid":7592,"hostname":"leandro","msg":"End of node method switchBrowser"}
+{"level":30,"time":"2022-12-16T23:21:52.800Z","pid":7592,"hostname":"leandro","msg":"Start of node method switchBrowser"}
+{"level":30,"time":"2022-12-16T23:21:52.800Z","pid":7592,"hostname":"leandro","msg":"End of node method switchBrowser"}
+{"level":30,"time":"2022-12-16T23:21:52.802Z","pid":7592,"hostname":"leandro","msg":"Start of node method getBrowserCatalog"}
+{"level":30,"time":"2022-12-16T23:21:52.803Z","pid":7592,"hostname":"leandro","msg":"End of node method getBrowserCatalog"}
+{"level":30,"time":"2022-12-16T23:21:52.806Z","pid":7592,"hostname":"leandro","msg":"Start of node method closeContext"}
+{"level":30,"time":"2022-12-16T23:21:52.792Z","pid":7592,"hostname":"leandro","msg":"Changing current active page"}
+{"level":30,"time":"2022-12-16T23:21:52.792Z","pid":7592,"hostname":"leandro","msg":"Changed active page"}
+{"level":30,"time":"2022-12-16T23:21:52.804Z","pid":7592,"hostname":"leandro","msg":"Changed active context"}
+{"level":30,"time":"2022-12-16T23:21:52.804Z","pid":7592,"hostname":"leandro","msg":"Changing current active page"}
+{"level":30,"time":"2022-12-16T23:21:52.804Z","pid":7592,"hostname":"leandro","msg":"Changed active page"}
+{"level":30,"time":"2022-12-16T23:21:52.822Z","pid":7592,"hostname":"leandro","msg":"Removed page=3e8868c8-ddf0-48ec-bbe9-9567d503a6ef from context=8f983ce4-b410-4ac2-b25a-98fa9bd0b804 page stack"}
+{"level":30,"time":"2022-12-16T23:21:52.858Z","pid":7592,"hostname":"leandro","msg":"End of node method closeContext"}
+{"level":30,"time":"2022-12-16T23:21:52.879Z","pid":7592,"hostname":"leandro","msg":"Start of node method getBrowserCatalog"}
+{"level":30,"time":"2022-12-16T23:21:52.879Z","pid":7592,"hostname":"leandro","msg":"End of node method getBrowserCatalog"}
+{"level":30,"time":"2022-12-16T23:21:52.890Z","pid":7592,"hostname":"leandro","msg":"Start of node method newBrowser"}
+{"level":30,"time":"2022-12-16T23:21:54.257Z","pid":7592,"hostname":"leandro","msg":"End of node method newBrowser"}
+{"level":30,"time":"2022-12-16T23:21:54.263Z","pid":7592,"hostname":"leandro","msg":"Start of node method newContext"}
+{"level":30,"time":"2022-12-16T23:21:54.263Z","pid":7592,"hostname":"leandro","msg":"currentBrowser: [object Object]"}
+{"level":30,"time":"2022-12-16T23:21:54.278Z","pid":7592,"hostname":"leandro","msg":"End of node method newContext"}
+{"level":30,"time":"2022-12-16T23:21:54.281Z","pid":7592,"hostname":"leandro","msg":"Start of node method newPage"}
+{"level":30,"time":"2022-12-16T23:21:54.263Z","pid":7592,"hostname":"leandro","msg":"Trace file: "}
+{"level":30,"time":"2022-12-16T23:21:54.278Z","pid":7592,"hostname":"leandro","msg":"Changed active context"}
+{"level":30,"time":"2022-12-16T23:21:54.281Z","pid":7592,"hostname":"leandro","msg":"currentBrowser: [object Object]"}
+{"level":30,"time":"2022-12-16T23:21:54.539Z","pid":7592,"hostname":"leandro","msg":"Video path: undefined"}
+{"level":30,"time":"2022-12-16T23:21:54.540Z","pid":7592,"hostname":"leandro","msg":"Changed active page"}
+{"level":30,"time":"2022-12-16T23:21:57.748Z","pid":7592,"hostname":"leandro","msg":"End of node method newPage"}
+{"level":30,"time":"2022-12-16T23:21:57.760Z","pid":7592,"hostname":"leandro","msg":"Start of node method fillText"}
+{"level":30,"time":"2022-12-16T23:21:57.760Z","pid":7592,"hostname":"leandro","msg":"Strict mode is enabled, find Locator with id=email in page."}
+{"level":30,"time":"2022-12-16T23:21:57.798Z","pid":7592,"hostname":"leandro","msg":"End of node method fillText"}
+{"level":30,"time":"2022-12-16T23:21:57.800Z","pid":7592,"hostname":"leandro","msg":"Start of node method fillText"}
+{"level":30,"time":"2022-12-16T23:21:57.800Z","pid":7592,"hostname":"leandro","msg":"Strict mode is enabled, find Locator with id=password in page."}
+{"level":30,"time":"2022-12-16T23:21:57.815Z","pid":7592,"hostname":"leandro","msg":"End of node method fillText"}
+{"level":30,"time":"2022-12-16T23:21:57.817Z","pid":7592,"hostname":"leandro","msg":"Start of node method click"}
+{"level":30,"time":"2022-12-16T23:21:57.817Z","pid":7592,"hostname":"leandro","msg":"Strict mode is enabled, find Locator with xpath=//button in page."}
+{"level":30,"time":"2022-12-16T23:21:57.878Z","pid":7592,"hostname":"leandro","msg":"End of node method click"}
+{"level":30,"time":"2022-12-16T23:21:57.881Z","pid":7592,"hostname":"leandro","msg":"Start of node method getElement"}
+{"level":30,"time":"2022-12-16T23:21:57.881Z","pid":7592,"hostname":"leandro","msg":"Strict mode is enabled, find Locator with xpath=//title[text()='Página Inicial - Didatikos'] in page."}
+{"level":30,"time":"2022-12-16T23:22:00.662Z","pid":7592,"hostname":"leandro","msg":"End of node method getElement"}
+{"level":30,"time":"2022-12-16T23:22:00.666Z","pid":7592,"hostname":"leandro","msg":"Start of node method takeScreenshot"}
+{"level":30,"time":"2022-12-16T23:22:01.132Z","pid":7592,"hostname":"leandro","msg":"End of node method takeScreenshot"}
+{"level":30,"time":"2022-12-16T23:22:01.135Z","pid":7592,"hostname":"leandro","msg":"Start of node method click"}
+{"level":30,"time":"2022-12-16T23:22:01.135Z","pid":7592,"hostname":"leandro","msg":"Strict mode is enabled, find Locator with xpath=//*[@class='f-16 text-bold px-15px'][text()='Avaliações / Simulados'] in page."}
+{"level":30,"time":"2022-12-16T23:22:02.103Z","pid":7592,"hostname":"leandro","msg":"End of node method click"}
+{"level":30,"time":"2022-12-16T23:22:02.115Z","pid":7592,"hostname":"leandro","msg":"Changed active context"}
+{"level":30,"time":"2022-12-16T23:22:02.106Z","pid":7592,"hostname":"leandro","msg":"Start of node method getBrowserCatalog"}
+{"level":30,"time":"2022-12-16T23:22:02.109Z","pid":7592,"hostname":"leandro","msg":"End of node method getBrowserCatalog"}
+{"level":30,"time":"2022-12-16T23:22:02.111Z","pid":7592,"hostname":"leandro","msg":"Start of node method getBrowserCatalog"}
+{"level":30,"time":"2022-12-16T23:22:02.112Z","pid":7592,"hostname":"leandro","msg":"End of node method getBrowserCatalog"}
+{"level":30,"time":"2022-12-16T23:22:02.120Z","pid":7592,"hostname":"leandro","msg":"Start of node method getBrowserCatalog"}
+{"level":30,"time":"2022-12-16T23:22:02.115Z","pid":7592,"hostname":"leandro","msg":"Changing current active page"}
+{"level":30,"time":"2022-12-16T23:22:02.115Z","pid":7592,"hostname":"leandro","msg":"Changed active page"}
+{"level":30,"time":"2022-12-16T23:22:02.125Z","pid":7592,"hostname":"leandro","msg":"End of node method getBrowserCatalog"}
+{"level":30,"time":"2022-12-16T23:22:02.126Z","pid":7592,"hostname":"leandro","msg":"Start of node method switchBrowser"}
+{"level":30,"time":"2022-12-16T23:22:02.126Z","pid":7592,"hostname":"leandro","msg":"End of node method switchBrowser"}
+{"level":30,"time":"2022-12-16T23:22:02.128Z","pid":7592,"hostname":"leandro","msg":"Start of node method switchBrowser"}
+{"level":30,"time":"2022-12-16T23:22:02.128Z","pid":7592,"hostname":"leandro","msg":"End of node method switchBrowser"}
+{"level":30,"time":"2022-12-16T23:22:02.131Z","pid":7592,"hostname":"leandro","msg":"Start of node method getBrowserCatalog"}
+{"level":30,"time":"2022-12-16T23:22:02.142Z","pid":7592,"hostname":"leandro","msg":"End of node method getBrowserCatalog"}
+{"level":30,"time":"2022-12-16T23:22:02.144Z","pid":7592,"hostname":"leandro","msg":"Changed active context"}
+{"level":30,"time":"2022-12-16T23:22:02.145Z","pid":7592,"hostname":"leandro","msg":"Start of node method closeContext"}
+{"level":30,"time":"2022-12-16T23:22:02.144Z","pid":7592,"hostname":"leandro","msg":"Changing current active page"}
+{"level":30,"time":"2022-12-16T23:22:02.144Z","pid":7592,"hostname":"leandro","msg":"Changed active page"}
+{"level":30,"time":"2022-12-16T23:22:02.162Z","pid":7592,"hostname":"leandro","msg":"Removed page=bae5a234-7a5f-4500-b05f-f5917262f137 from context=8d2fab75-fd27-470d-a65a-ea641365768e page stack"}
+{"level":30,"time":"2022-12-16T23:22:02.190Z","pid":7592,"hostname":"leandro","msg":"End of node method closeContext"}
+{"level":30,"time":"2022-12-16T23:22:02.203Z","pid":7592,"hostname":"leandro","msg":"Start of node method getBrowserCatalog"}
+{"level":30,"time":"2022-12-16T23:22:02.203Z","pid":7592,"hostname":"leandro","msg":"End of node method getBrowserCatalog"}
+{"level":30,"time":"2022-12-16T23:22:02.214Z","pid":7592,"hostname":"leandro","msg":"Start of node method newBrowser"}
+{"level":30,"time":"2022-12-16T23:22:03.782Z","pid":7592,"hostname":"leandro","msg":"End of node method newBrowser"}
+{"level":30,"time":"2022-12-16T23:22:03.784Z","pid":7592,"hostname":"leandro","msg":"currentBrowser: [object Object]"}
+{"level":30,"time":"2022-12-16T23:22:03.784Z","pid":7592,"hostname":"leandro","msg":"Start of node method newContext"}
+{"level":30,"time":"2022-12-16T23:22:03.795Z","pid":7592,"hostname":"leandro","msg":"End of node method newContext"}
+{"level":30,"time":"2022-12-16T23:22:03.784Z","pid":7592,"hostname":"leandro","msg":"Trace file: "}
+{"level":30,"time":"2022-12-16T23:22:03.795Z","pid":7592,"hostname":"leandro","msg":"Changed active context"}
+{"level":30,"time":"2022-12-16T23:22:03.816Z","pid":7592,"hostname":"leandro","msg":"currentBrowser: [object Object]"}
+{"level":30,"time":"2022-12-16T23:22:03.816Z","pid":7592,"hostname":"leandro","msg":"Start of node method newPage"}
+{"level":30,"time":"2022-12-16T23:22:04.018Z","pid":7592,"hostname":"leandro","msg":"Video path: undefined"}
+{"level":30,"time":"2022-12-16T23:22:04.018Z","pid":7592,"hostname":"leandro","msg":"Changed active page"}
+{"level":30,"time":"2022-12-16T23:22:07.372Z","pid":7592,"hostname":"leandro","msg":"End of node method newPage"}
+{"level":30,"time":"2022-12-16T23:22:07.386Z","pid":7592,"hostname":"leandro","msg":"Start of node method fillText"}
+{"level":30,"time":"2022-12-16T23:22:07.386Z","pid":7592,"hostname":"leandro","msg":"Strict mode is enabled, find Locator with id=email in page."}
+{"level":30,"time":"2022-12-16T23:22:07.431Z","pid":7592,"hostname":"leandro","msg":"End of node method fillText"}
+{"level":30,"time":"2022-12-16T23:22:07.435Z","pid":7592,"hostname":"leandro","msg":"Start of node method fillText"}
+{"level":30,"time":"2022-12-16T23:22:07.435Z","pid":7592,"hostname":"leandro","msg":"Strict mode is enabled, find Locator with id=password in page."}
+{"level":30,"time":"2022-12-16T23:22:07.453Z","pid":7592,"hostname":"leandro","msg":"End of node method fillText"}
+{"level":30,"time":"2022-12-16T23:22:07.455Z","pid":7592,"hostname":"leandro","msg":"Start of node method click"}
+{"level":30,"time":"2022-12-16T23:22:07.455Z","pid":7592,"hostname":"leandro","msg":"Strict mode is enabled, find Locator with xpath=//button in page."}
+{"level":30,"time":"2022-12-16T23:22:07.487Z","pid":7592,"hostname":"leandro","msg":"End of node method click"}
+{"level":30,"time":"2022-12-16T23:22:07.489Z","pid":7592,"hostname":"leandro","msg":"Start of node method getElement"}
+{"level":30,"time":"2022-12-16T23:22:07.490Z","pid":7592,"hostname":"leandro","msg":"Strict mode is enabled, find Locator with xpath=//title[text()='Página Inicial - Didatikos'] in page."}
+{"level":30,"time":"2022-12-16T23:22:09.882Z","pid":7592,"hostname":"leandro","msg":"End of node method getElement"}
+{"level":30,"time":"2022-12-16T23:22:09.885Z","pid":7592,"hostname":"leandro","msg":"Start of node method takeScreenshot"}
+{"level":30,"time":"2022-12-16T23:22:10.367Z","pid":7592,"hostname":"leandro","msg":"End of node method takeScreenshot"}
+{"level":30,"time":"2022-12-16T23:22:10.376Z","pid":7592,"hostname":"leandro","msg":"Start of node method click"}
+{"level":30,"time":"2022-12-16T23:22:10.376Z","pid":7592,"hostname":"leandro","msg":"Strict mode is enabled, find Locator with xpath=//*[@class='f-16 text-bold px-15px'][text()='Eventos'] in page."}
+{"level":30,"time":"2022-12-16T23:22:11.050Z","pid":7592,"hostname":"leandro","msg":"End of node method click"}
+{"level":30,"time":"2022-12-16T23:22:11.054Z","pid":7592,"hostname":"leandro","msg":"Start of node method getBrowserCatalog"}
+{"level":30,"time":"2022-12-16T23:22:11.148Z","pid":7592,"hostname":"leandro","msg":"End of node method getBrowserCatalog"}
+{"level":30,"time":"2022-12-16T23:22:11.149Z","pid":7592,"hostname":"leandro","msg":"Start of node method getBrowserCatalog"}
+{"level":30,"time":"2022-12-16T23:22:11.164Z","pid":7592,"hostname":"leandro","msg":"End of node method getBrowserCatalog"}
+{"level":30,"time":"2022-12-16T23:22:11.166Z","pid":7592,"hostname":"leandro","msg":"Changed active context"}
+{"level":30,"time":"2022-12-16T23:22:11.172Z","pid":7592,"hostname":"leandro","msg":"Start of node method getBrowserCatalog"}
+{"level":30,"time":"2022-12-16T23:22:11.174Z","pid":7592,"hostname":"leandro","msg":"End of node method getBrowserCatalog"}
+{"level":30,"time":"2022-12-16T23:22:11.176Z","pid":7592,"hostname":"leandro","msg":"Start of node method switchBrowser"}
+{"level":30,"time":"2022-12-16T23:22:11.176Z","pid":7592,"hostname":"leandro","msg":"End of node method switchBrowser"}
+{"level":30,"time":"2022-12-16T23:22:11.177Z","pid":7592,"hostname":"leandro","msg":"Start of node method switchBrowser"}
+{"level":30,"time":"2022-12-16T23:22:11.177Z","pid":7592,"hostname":"leandro","msg":"End of node method switchBrowser"}
+{"level":30,"time":"2022-12-16T23:22:11.178Z","pid":7592,"hostname":"leandro","msg":"Start of node method getBrowserCatalog"}
+{"level":30,"time":"2022-12-16T23:22:11.180Z","pid":7592,"hostname":"leandro","msg":"End of node method getBrowserCatalog"}
+{"level":30,"time":"2022-12-16T23:22:11.183Z","pid":7592,"hostname":"leandro","msg":"Start of node method closeContext"}
+{"level":30,"time":"2022-12-16T23:22:11.166Z","pid":7592,"hostname":"leandro","msg":"Changing current active page"}
+{"level":30,"time":"2022-12-16T23:22:11.166Z","pid":7592,"hostname":"leandro","msg":"Changed active page"}
+{"level":30,"time":"2022-12-16T23:22:11.181Z","pid":7592,"hostname":"leandro","msg":"Changed active context"}
+{"level":30,"time":"2022-12-16T23:22:11.181Z","pid":7592,"hostname":"leandro","msg":"Changing current active page"}
+{"level":30,"time":"2022-12-16T23:22:11.181Z","pid":7592,"hostname":"leandro","msg":"Changed active page"}
+{"level":30,"time":"2022-12-16T23:22:11.203Z","pid":7592,"hostname":"leandro","msg":"Removed page=93b40d03-8b34-4e71-ae6b-1d498c72fd20 from context=f0f9ecb1-a411-4b47-a43c-586dc9f10bc7 page stack"}
+{"level":30,"time":"2022-12-16T23:22:11.233Z","pid":7592,"hostname":"leandro","msg":"End of node method closeContext"}
+{"level":30,"time":"2022-12-16T23:22:11.244Z","pid":7592,"hostname":"leandro","msg":"Start of node method getBrowserCatalog"}
+{"level":30,"time":"2022-12-16T23:22:11.244Z","pid":7592,"hostname":"leandro","msg":"End of node method getBrowserCatalog"}
+{"level":30,"time":"2022-12-16T23:22:11.309Z","pid":7592,"hostname":"leandro","msg":"Start of node method closeAllBrowsers"}
+{"level":30,"time":"2022-12-16T23:22:12.032Z","pid":7592,"hostname":"leandro","msg":"End of node method closeAllBrowsers"}
