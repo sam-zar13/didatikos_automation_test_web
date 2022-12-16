@@ -24,3 +24,7 @@ Verificar login inválido
 Verificar login vazio
     Get Text                xpath=//*[text()='O campo senha é obrigatório.']        ==      O campo senha é obrigatório.  
     Get Text                xpath=//*[text()='O campo e-mail é obrigatório.']        ==      O campo e-mail é obrigatório.
+
+Login com perfil Escola
+    Preencher login        didatikoseduca@gmail.com        carlos2912  
+    Verificar login com sucesso perfil escola
